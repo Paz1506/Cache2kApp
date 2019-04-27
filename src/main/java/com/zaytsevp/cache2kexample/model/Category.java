@@ -1,8 +1,6 @@
-package com.zaytsevp.springcache.model;
+package com.zaytsevp.cache2kexample.model;
 
 /**
- * Created on 13.02.2019.
- *
  * @author Pavel Zaytsev
  */
 public enum Category {

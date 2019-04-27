@@ -1,15 +1,15 @@
-package com.zaytsevp.springcache.model;
+package com.zaytsevp.cache2kexample.model;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 /**
- * Created on 13.02.2019.
- *
  * @author Pavel Zaytsev
  */
 @Data
 @Builder
+@ToString
 public class Auto {
 
     private String brand;
