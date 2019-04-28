@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/8eb6987d-69a3-4032-951d-7f3eb8c83eb1)](https://codebeat.co/projects/github-com-paz1506-cache2kapp-master)
+
 # Simple Cache2k application with Spring
 
 Sample Spring application using Cache2k caching.
