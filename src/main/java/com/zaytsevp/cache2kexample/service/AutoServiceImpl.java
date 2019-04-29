@@ -19,7 +19,7 @@ public class AutoServiceImpl implements AutoService {
     private final AutoRepository autoRepository;
 
     @Override
-    @Cacheable(cacheManager = "cacheManager", cacheNames = "autos", key = "#category")
+    @Cacheable(cacheManager = "cacheManager", cacheNames = "autos", key = "#category", unless = "#result == null || #result.size() == 0")
     public List<Auto> getByCategory(Category category) {
         if (category == null) throw new IllegalArgumentException("Null category!");
 

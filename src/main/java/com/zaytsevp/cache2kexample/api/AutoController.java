@@ -2,6 +2,7 @@ package com.zaytsevp.cache2kexample.api;
 
 import com.zaytsevp.cache2kexample.api.dto.AutoDto;
 import com.zaytsevp.cache2kexample.api.mapper.AutoMapper;
+import com.zaytsevp.cache2kexample.aspect.TraceExecutionTime;
 import com.zaytsevp.cache2kexample.model.Category;
 import com.zaytsevp.cache2kexample.service.AutoService;
 import io.swagger.annotations.ApiOperation;
@@ -29,6 +30,7 @@ public class AutoController {
 
     @ApiOperation("Получить список авто по категории")
     @GetMapping("/list")
+    @TraceExecutionTime
     public List<AutoDto> getListByCategory(@RequestParam Category category) {
         return autoService.getByCategory(category)
                           .stream()
