@@ -6,6 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Аннотация, для методов, время
+ * выполнения которых мы хотим отследить
+ *
  * @author Pavel Zaytsev
  */
 @Target(ElementType.METHOD)
